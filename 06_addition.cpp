@@ -1,13 +1,13 @@
 #include <iostream>
-using namespace std;
+// using namespace std;
 int main()
 {
     int a, b, c;
-    cout << "enter a : ";
-    cin >> a;
-    cout << "enter b : ";
-    cin >> b;
+    std::cout << "enter a : ";
+    std::cin >> a;
+    std::cout << "enter b : ";
+    std::cin >> b;
     c = a + b;
-    cout << "sum of " << a << " and " << b << " = " << c;
+    std::cout << "sum of " << a << " and " << b << " = " << c<<std::endl;
     return 0;
 }
