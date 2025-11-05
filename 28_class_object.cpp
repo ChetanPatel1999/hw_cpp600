@@ -29,7 +29,6 @@ int main()
     m1.setMouse("HP", 200, 3.4);
     m2.setMouse("Dell", 300, 4.4);
     m3.setMouse("lenovo", 130, 2.6);
-
     m1.getMouse();
     m2.getMouse();
     m3.getMouse();
