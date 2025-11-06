@@ -4,7 +4,7 @@ class Circle
 {
     float radius;
     float area;
-    float circumference;
+    float circumference; 
 
 public:
     void setRadius(float r)
