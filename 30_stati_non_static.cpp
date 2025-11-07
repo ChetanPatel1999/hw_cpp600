@@ -31,6 +31,5 @@ int main()
     d1.getData();
     d2.getData();
     d3.getData();
-
     return 0;
 }
