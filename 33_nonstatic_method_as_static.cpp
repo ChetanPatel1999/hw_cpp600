@@ -1,3 +1,4 @@
+// how to make non static method  as static methods
 #include <iostream>
 using namespace std;
 class Student
@@ -58,6 +59,33 @@ public:
         cout << "i am Student class" << endl;
         cout << "i have 4-5 methods" << endl;
     }
+
+    // void average(Student obj)
+    // {
+    //     float ave;
+    //     ave = (per + obj.per) / 2;
+    //     cout << "average of " << name << " and " << obj.name << " = " << ave << endl;
+    //     cout << "----------------------------------------------------" << endl;
+    // }
+
+    static void average(Student obj1, Student obj2)
+    {
+        float ave;
+        ave = (obj1.per + obj2.per) / 2;
+        cout << "average of " << obj1.name << " and " << obj2.name << " = " << ave << endl;
+        cout << "----------------------------------------------------" << endl;
+    }
+    static void greter_marks(Student obj1, Student obj2)
+    {
+        if (obj1.per > obj2.per)
+        {
+            cout << obj1.name << " have greater percentage to " << obj2.name << endl;
+        }
+        else
+        {
+            cout << obj2.name << " have greater percentage to " << obj1.name << endl;
+        }
+    }
 };
 int Student::totalStudent = 0;
 int Student::totalpass = 0;
@@ -69,7 +97,7 @@ int main()
     s1.setStudent("anirudh", 101, 12);
     s2.setStudent("gouri", 102, 8);
     s3.setStudent("balram", 103, 79);
-    s4.setStudent("prohit", 104, 58);
+    s4.setStudent("prohit", 104, 90);
     s1.getResultCard();
     s2.getResultCard();
     s3.getResultCard();
@@ -78,5 +106,11 @@ int main()
     Student::getTotalResult();
     Student::getTotleStudent();
     Student::classInfo();
+    // s1.average(s2);
+
+    Student::average(s1, s2);
+    Student::average(s3, s2);
+
+    Student::greter_marks(s3, s4);
     return 0;
 }
