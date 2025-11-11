@@ -75,6 +75,13 @@ public:
         cout << "average of " << obj1.name << " and " << obj2.name << " = " << ave << endl;
         cout << "----------------------------------------------------" << endl;
     }
+    static void average(Student obj1, Student obj2, Student obj3)
+    {
+        float ave;
+        ave = (obj1.per + obj2.per + obj3.per) / 3;
+        cout << "average of " << obj1.name << " and " << obj2.name << " and " << obj3.name << " = " << ave << endl;
+        cout << "----------------------------------------------------" << endl;
+    }
     static void greter_marks(Student obj1, Student obj2)
     {
         if (obj1.per > obj2.per)
@@ -110,6 +117,7 @@ int main()
 
     Student::average(s1, s2);
     Student::average(s3, s2);
+    Student::average(s1, s2, s3);
 
     Student::greter_marks(s3, s4);
     return 0;
