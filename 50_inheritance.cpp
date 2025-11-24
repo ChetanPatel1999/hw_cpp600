@@ -36,6 +36,23 @@ public:
     }
 };
 
+class MediStud : public Student
+{
+    int prof;
+    string speci;
+
+public:
+    void setMediStd(int p, string s)
+    {
+        prof = p;
+        speci = s;
+    }
+    void getMediStd()
+    {
+        cout << "prof : " << prof << endl;
+        cout << "speci : " << speci << endl;
+    }
+};
 int main()
 {
     EngStd s1;
@@ -43,5 +60,11 @@ int main()
     s1.setEngStd(3, "cs");
     s1.getStudent();
     s1.getEngStd();
+
+    MediStud s2;
+    s2.setStudent("gouri", 102);
+    s2.setMediStd(3, "artho");
+    s2.getStudent();
+    s2.getMediStd();
     return 0;
 }
