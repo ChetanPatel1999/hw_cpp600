@@ -18,8 +18,6 @@ public:
 };
 int main()
 {
-    parent p1;
-    p1.show();
     child c1;
     c1.show();
     return 0;
