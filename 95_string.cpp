@@ -1,0 +1,13 @@
+//visit string using for loop
+#include <iostream>
+using namespace std;
+int main()
+{
+    string s = "ramlal ji indore wale";
+    int i;
+    for (i = 0; s[i] != '\0'; i++)
+    {
+        cout << s[i] << " ";
+    }
+    return 0;
+}
